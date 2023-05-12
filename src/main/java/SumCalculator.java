@@ -1,7 +1,9 @@
+import java.util.stream.IntStream;
+
 public class SumCalculator {
-     int sumCalc = 0;
 
     public int sum(int n) {
+        int sumCalc = 0;
         if (n == 0) {
             throw new IllegalArgumentException();
         }
@@ -9,7 +11,9 @@ public class SumCalculator {
         for (int i = 0; i <= n; i++) {
             sumCalc =sumCalc + i;
         }
-        return sumCalc;
+
+        return IntStream.rangeClosed(0,n).sum();
 
     }
+
 }

@@ -23,7 +23,7 @@ public class TestSumCalculator {
     public void testThat3InputHandledCorrectly(){
         int actual = sumCalculator.sum(3);
         int expected = 6;
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected,sumCalculator.sum(3));
     }
 
 
